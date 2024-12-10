@@ -2,5 +2,15 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+via_ir = true
+
+[profile.default.zksync]
+compile = true
+startup = true
+zksolc = "1.5.7"
+
+[rpc_endpoints]
+anvil-zksync = "http://127.0.0.1:8011"
+zksync-testnet = "https://sepolia.era.zksync.dev"
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
